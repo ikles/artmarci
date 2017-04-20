@@ -79,6 +79,9 @@ ul, li {
   margin: 0;
   list-style: none; }
 
+.wrapper {
+  font-family: "Myriad Pro"; }
+
 .img1 {
   background-image: url("../img/marci1.jpg"); }
 
@@ -396,6 +399,38 @@ div#rotator ul li.show {
   margin-top: 20px; }
   .blog-link:hover {
     text-decoration: underline; }
+
+.wrap {
+  overflow: hidden;
+  position: relative; }
+
+.main-links {
+  width: 553px;
+  position: absolute;
+  z-index: 1000;
+  top: -webkit-calc(50% - 100px);
+  top: calc(50% - 100px);
+  left: -webkit-calc(50% - 276.5px);
+  left: calc(50% - 276.5px);
+  text-align: center; }
+  .main-links span {
+    width: 553px;
+    height: 83px;
+    display: block;
+    background: url("../img/main-name.png") no-repeat 0 0;
+    margin-bottom: 35px; }
+  .main-links a {
+    display: inline-block;
+    border: 5px solid #fff;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    width: 211px;
+    height: 60px;
+    text-align: center;
+    color: #FFF;
+    margin: 0 20px;
+    font-size: 32px;
+    text-transform: lowercase; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */

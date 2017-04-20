@@ -5,13 +5,9 @@ function theRotator() {
 	// Берем первую картинку и показываем ее (по пути включаем полную видимость)
 	$('div#rotator ul li:first').css({opacity: 1.0});
 
-
 	// Вызываем функцию rotate для запуска слайдшоу, 5000 = смена картинок происходит раз в 5 секунд
 	setInterval('rotate()',5000);
-
-
 }
-
 
 function rotate() {	
 	
@@ -28,14 +24,9 @@ function rotate() {
 
 	// Подключаем эффект растворения/затухания для показа картинок, css-класс show имеет больший z-index
 	
-
-
-
-
 	next.css({opacity: 0.0})
 	.addClass('show')
 	.animate({opacity: 1.0}, 1000);
-	
 	
 	next.find('.img').css({backgroundSize: 'auto 140%'})
 
@@ -47,23 +38,12 @@ function rotate() {
 		}
 	}, 100);
 
-	
-
-
-
 	// Прячем текущую картинку	
 	current.animate({opacity: 0.0}, 1000)
 	.removeClass('show');
-	
-	
-
-	
-
-
 };
 
 $(function() {
-
 
 	var i = 140;	
 	var timerId = setInterval(function() {
@@ -72,11 +52,6 @@ $(function() {
 			i = i-0.25;
 		}
 	}, 100);
-
-
-
-	
-
 
 	theRotator();
 

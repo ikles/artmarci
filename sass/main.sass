@@ -17,7 +17,10 @@ ul, li
 	padding: 0
 	margin: 0
 	list-style: none
-  
+
+.wrapper
+	font-family: "Myriad Pro"    
+
 .img1			
 	background-image: url("../img/marci1.jpg")	
 
@@ -27,8 +30,6 @@ ul, li
 .img3
 	background-image: url("../img/marci3.jpg")
 
-
-	
 div#rotator
 	height: 100vh
 	ul
@@ -341,9 +342,34 @@ div#rotator
 	&:hover
 		text-decoration: underline
 
+.wrap
+	overflow: hidden
+	position: relative
 
-
-
+.main-links
+	width: 553px
+	position: absolute
+	z-index: 1000 
+	top: calc(50% - 100px)
+	left: calc(50% - 276.5px)
+	text-align: center
+	span
+		width: 553px
+		height: 83px
+		display: block
+		background: url("../img/main-name.png") no-repeat 0 0
+		margin-bottom: 35px
+	a
+		display: inline-block
+		border: 5px solid #fff		
+		border-radius: 5px 
+		width: 211px
+		height: 60px
+		text-align: center
+		color: #FFF 		
+		margin: 0 20px
+		font-size: 32px
+		text-transform: lowercase
 
 
 @import _media
