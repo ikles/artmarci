@@ -85,25 +85,29 @@ ul, li {
 .img2 {
   background-image: url("../img/marci2.jpg"); }
 
-div#rotator {
-  position: relative;
-  height: 100vh; }
+.img3 {
+  background-image: url("../img/marci3.jpg"); }
 
-div#rotator ul {
-  padding: 0;
-  margin: 0; }
-  div#rotator ul li {
-    float: left;
-    position: absolute;
-    list-style: none;
-    width: 100%;
-    height: 100vh; }
-    div#rotator ul li div {
-      width: 100%;
-      height: 100%;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 120% auto; }
+div#rotator {
+  height: 100vh; }
+  div#rotator ul {
+    height: 100vh;
+    padding: 0;
+    margin: 0; }
+    div#rotator ul li {
+      height: 100vh;
+      float: left;
+      list-style: none;
+      display: block; }
+      div#rotator ul li div {
+        margin: auto;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: auto 140%;
+        height: 100vh; }
 
 div#rotator ul li.show {
   z-index: 500; }

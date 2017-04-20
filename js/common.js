@@ -35,11 +35,21 @@ function rotate() {
 	next.css({opacity: 0.0})
 	.addClass('show')
 	.animate({opacity: 1.0}, 1000);
-	next.find('.img').css({backgroundSize: '120%'})
-	next.find('.img').animate({backgroundSize: '100%'}, 5000);
+	
+	
+	next.find('.img').css({backgroundSize: 'auto 140%'})
 
+	var i = 140;
+	setInterval(function() {
+		if (i > 120) {
+			next.find('.img').css({backgroundSize : 'auto '+i+'%'});
+			i = i-0.25;
+		}
+	}, 100);
 
 	
+
+
 
 	// Прячем текущую картинку	
 	current.animate({opacity: 0.0}, 1000)
@@ -55,7 +65,19 @@ function rotate() {
 $(function() {
 
 
-	theRotator();
+	var i = 140;	
+	var timerId = setInterval(function() {
+		if (i > 120) {
+			$('.img1').css({backgroundSize : 'auto '+i+'%'});
+			i = i-0.25;
+		}
+	}, 100);
 
+
+
+	
+
+
+	theRotator();
 
 }); //ready
