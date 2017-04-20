@@ -277,7 +277,24 @@ div#rotator ul li.show {
     text-transform: uppercase;
     font-weight: 400; }
 
+.cont-contacts {
+  line-height: 1;
+  float: left;
+  color: #FFF;
+  font-family: "Myriad Pro";
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase; }
+  .cont-contacts p {
+    margin-bottom: 8px; }
+  .cont-contacts a {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700; }
+
 .cont-form {
+  width: 508px;
+  float: right;
   color: #FFF;
   input: -moz-placeholder;
     input-color: #FFF;
