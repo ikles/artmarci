@@ -1,0 +1,41 @@
+.hor-mnu.main-mnu  
+  a
+    color: #000 
+
+@media only screen and (min-width : 992px)
+  .hor-mnu
+    > ul
+      display: block
+      text-align: center
+      > li
+        display: inline-block
+        margin: 0 5px
+        position: relative
+        list-style: none
+        ul    
+          min-width: 120px   
+          text-align: left 
+          position: absolute
+          left: 0        
+          display: none
+          li
+            margin: 0
+            list-style: none
+      a
+        color: #fff
+        font-size: 15px
+        display: block 
+        padding: 5px 15px
+        background-color: #ccc 
+        text-decoration: none
+        &:hover
+          background-color: blue
+      .active
+        > a
+          background-color: blue
+    
+    .parent
+      &:hover
+        ul
+          display: block
+

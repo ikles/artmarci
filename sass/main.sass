@@ -1,0 +1,210 @@
+@import _fonts
+@import _mnu
+
+/*input[type=submit]*/
+
+a:hover, a:focus, a:active
+  color: #FFF 
+  text-decoration: none
+  outline: 0
+
+ul, li
+	padding: 0
+	margin: 0
+	list-style: none
+  
+.img1			
+	background-image: url("../img/marci1.jpg")	
+
+.img2	
+	background-image: url("../img/marci2.jpg")
+
+div#rotator
+	position: relative
+	height: 100vh	
+	
+div#rotator
+	ul
+		padding: 0
+		margin: 0
+		li
+			float: left
+			position: absolute
+			list-style: none
+			width: 100%
+			height: 100vh
+			div
+				width: 100%
+				height: 100%					
+				background-repeat: no-repeat 
+				background-position: center center				
+				background-size: 120% auto
+			
+div#rotator
+	ul
+		li.show
+			z-index: 500
+
+.content
+	background-color: #2C3344	
+	min-height: 100vh 
+	width: 100%
+	overflow: hidden
+
+.w1152
+	width: 1152px
+	margin: auto
+
+.header
+	height: 131px
+	padding-top: 38px	
+	box-sizing: border-box
+	
+.logo
+	display: block
+	float: left
+	
+.hor-mnu
+	float: right
+	ul		
+		margin: 0
+		padding: 0
+	li
+		padding: 0
+		margin-top: 0
+		margin-bottom: 0
+		float: left
+		color: white
+		font-family: "Myriad Pro"
+		font-size: 20px
+		text-transform: uppercase
+		margin-left: 19px
+		list-style: none
+		&:last-child
+			margin-right: 0
+		a
+			color: #FFF 
+						
+.fb
+	float: right
+	margin-top: -7px
+	margin-left: 36px
+
+.w966
+	width: 966px
+
+.mnu-fb
+	border-bottom: 1px solid #fff
+	overflow: hidden
+	float: right
+	padding-bottom: 17px
+	padding-top: 7px
+	margin-top: -21px
+
+.l-col
+	width: 186px	
+
+.r-col
+	width: 966px	
+	border-bottom: 1px solid #fff
+	height: 555px
+
+.center	
+	display: table
+	> div
+		display: table-cell
+			
+.l-col
+	vertical-align: bottom
+	padding-right: 30px
+
+.l-mnu	
+	margin-bottom: 108px
+	ul
+		width: 100%
+	li
+		color: white
+		font-family: "Myriad Pro"
+		font-size: 20px		
+		text-transform: uppercase
+		list-style: none
+		line-height: 1
+		a
+			color: #FFF 		
+			display: block
+			border-bottom: 1px solid #B1794D
+			width: 100%
+			line-height: 1.35
+			padding: 10px 0
+			&:hover
+				color: #B1794D 
+	.parent
+		a
+			color: #B1794D 
+
+.gal
+	overflow: hidden
+	ul
+		overflow: hidden
+	li
+		float: left
+		margin-right: 33px
+		&:last-child
+			margin-right: 0
+		a						
+			position: relative
+			display: block
+			transition: 3s			
+			&:before
+				width: 300px
+				height: 450px				
+				display: block
+				content: "" 
+				background-color: transparent
+				opacity: 0.71
+				position: absolute
+				top: 0
+				left: 0
+				transition: 1s
+			&:hover:before
+				background-color: #2C3344				
+			&:hover
+				.name-img
+					transition: 2s
+					color: #FFF 
+					left: 26px					
+				img										
+			.name-img
+				position: absolute
+				top: 26px
+				left: 10px
+				color: transparent 				
+				font-family: "Myriad Pro"
+				font-size: 18px				
+				text-transform: uppercase
+
+.gal-arrows
+	margin-top: 28px
+	overflow: hidden
+	a
+		display: block
+		background-repeat: no-repeat 
+		background-position: 0 0 
+		height: 41px
+		width: 26px		
+			 
+	.prew
+		background-image: url("../img/arr-l.png")
+		float: left
+	.next
+		background-image: url("../img/arr-r.png")
+		float: right
+	
+
+
+
+
+
+
+
+@import _media
