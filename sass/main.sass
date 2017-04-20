@@ -1,12 +1,17 @@
 @import _fonts
 @import _mnu
 
-/*input[type=submit]*/
-
 a:hover, a:focus, a:active
   color: #FFF 
   text-decoration: none
   outline: 0
+
+h1, h2, h3
+ margin-top: 0
+ line-height: 1
+
+p
+	margin-top: 0
 
 ul, li
 	padding: 0
@@ -50,6 +55,7 @@ div#rotator
 	min-height: 100vh 
 	width: 100%
 	overflow: hidden
+	padding-bottom: 100px
 
 .w1152
 	width: 1152px
@@ -200,6 +206,89 @@ div#rotator
 		background-image: url("../img/arr-r.png")
 		float: right
 	
+.component
+	overflow: hidden
+	color: white
+	font-family: "Myriad Pro"
+	font-size: 18px
+	p			
+		color: #FFF 
+	h2
+		font-size: 18px
+		color: #FFF 		
+		text-transform: uppercase
+		font-weight: 400 
+		
+.cont-form	
+	color: #FFF 
+	input[type=text]
+		text-transform: uppercase
+		width: 508px
+		height: 40px
+		background-color: #6F6F6F 
+		padding: 0
+		margin: 0
+		border: none
+		padding-left: 20px
+		padding-right: 20px
+		margin-bottom: 18px
+	textarea
+		text-transform: uppercase
+		width: 508px
+		height: 281px
+		background-color: #6F6F6F 
+		padding: 0
+		margin: 0
+		border: none
+		padding-left: 20px
+		padding-right: 20px
+		margin-bottom: 18px
+		padding-top: 18px		
+	input[type=submit]
+		text-transform: uppercase
+		width: 508px
+		height: 40px
+		padding: 0
+		margin: 0
+		border: none
+		text-align: center
+		cursor: pointer
+		background-color: transparent 
+		border: 1px solid #fff
+	
+
+
+	input::-webkit-input-placeholder
+		color: #FFF 
+		opacity: 1
+	input::-moz-placeholder
+		color: #FFF 
+		opacity: 1
+	input:::-moz-placeholder
+		color: #FFF 
+		opacity: 1
+	input::-ms-input-placeholder
+		color: #FFF 
+		opacity: 1
+
+	textarea::-webkit-input-placeholder
+		color: #FFF 
+		opacity: 1
+	textarea::-moz-placeholder
+		color: #FFF 
+		opacity: 1
+	textarea:::-moz-placeholder
+		color: #FFF 
+		opacity: 1
+	textarea::-ms-input-placeholder
+		color: #FFF 
+		opacity: 1 
+
+
+
+
+
+
 
 
 
