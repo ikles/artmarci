@@ -37,7 +37,7 @@
 .toggle-mnu span:before {
   width: 100%;
   height: 2px;
-  background-color: #000;
+  background-color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-backface-visibility: hidden;
@@ -130,7 +130,8 @@ div#rotator ul li.show {
   height: 131px;
   padding-top: 38px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  position: relative; }
 
 .logo {
   display: block;
@@ -435,12 +436,11 @@ div#rotator ul li.show {
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-  /**/ }
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
+  .w966, .r-col {
+    width: 800px; }
   .w1152 {
-    width: 100%; }
+    width: 990px;
+    overflow: hidden; }
   .main-mnu {
     display: none;
     float: right;
@@ -471,6 +471,10 @@ div#rotator ul li.show {
       .main-mnu a:hover {
         text-decoration: underline; } }
 
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /**/ }
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   /**/ }
@@ -482,14 +486,25 @@ div#rotator ul li.show {
   /**/ }
 
 @media only screen and (max-width: 570px) {
-  /**/ }
+  .main-links {
+    width: 100%;
+    padding: 0 20px;
+    left: 0; }
+    .main-links span {
+      width: 100%;
+      background-size: 100%; }
+    .main-links a {
+      margin-bottom: 20px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  /**/ }
+  .main-links span {
+    height: 70px;
+    margin-bottom: 20px; } }
 
 @media only screen and (max-width: 360px) {
-  /**/ }
+  .main-links span {
+    height: 50px; } }
 
 @media only screen and (max-width: 320px) {
   /**/ }
@@ -509,11 +524,11 @@ div#rotator ul li.show {
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
   .main-mnu {
     display: block !important; }
   a {
     outline: none !important; } }
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
-  /**/ }

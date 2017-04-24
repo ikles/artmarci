@@ -32,7 +32,7 @@ function rotate() {
 
 	var i = 140;
 	setInterval(function() {
-		if (i > 120) {
+		if (i > 130) {
 			next.find('.img').css({backgroundSize : 'auto '+i+'%'});
 			i = i-0.25;
 		}
@@ -47,7 +47,7 @@ $(function() {
 
 	var i = 140;	
 	var timerId = setInterval(function() {
-		if (i > 120) {
+		if (i > 130) {
 			$('.img1').css({backgroundSize : 'auto '+i+'%'});
 			i = i-0.25;
 		}
