@@ -1,7 +1,14 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) 
+@media only screen and (max-width : 1200px) 	
+	.blog
+		li
+			width: 244px
+
+	.gal
+		margin-bottom: 30px
+
 	.col-mnu
 		position: absolute
 		right: 0
@@ -47,6 +54,13 @@
 			
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) 			
+	.blog
+		li
+			width: 274px
+			&:nth-child(3n)	
+				margin-right: 33px
+			&:nth-child(2n)	
+				margin-right: 0
 	.cont-contacts
 		margin-bottom: 20px
 
@@ -66,6 +80,19 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) 	
+	.blog
+		li
+			float: none
+			width: 300px
+			margin-left: auto
+			margin-right: auto
+			&:nth-child(3n)					
+				margin-left: auto
+				margin-right: auto
+			&:nth-child(2n)					
+				margin-left: auto
+				margin-right: auto
+				
 	.mnu-fb
 		margin-top: 16px
 		border-bottom: none
@@ -87,12 +114,23 @@
 				
 
 @media only screen and (max-width : 640px) 
+	.center
+		width: 100%
+
+	.l-mnu
+		margin-bottom: 0
+
 	.w966
 		width: 312px
 	.r-col
 		width: 100%
+		display: block $i
+		height: auto
+		overflow: hidden
 	.l-col	
 		padding: 0
+		width: 100%
+		display: block $i
 	.w1152
 		width: 500px	
 		
